@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;;
+  background-color: #f9f9f9;
+  color: #222;
+  text-align: center;
+  line-height: 1.6;
+  background-image: url('imagem04.png'); /*Adicionamos a imagem como fundo para dar o contraste com a primeira*/
+}
+
+header {
+  background-image: url('imagem02.png'); /*Adicionamos a imagem pq combinou mais com o design*/
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: right;
+  position: relative;
+  
+}
+
+input {
+  font-size: 16px;
+  padding: 11px;
+  margin-bottom: 12px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  width: 100%;
+}
+
+input:focus {
+  border:3px solid #4F9DDE;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 30px;
+  border-radius: 15px;
+  color: white;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+
+.radio-text {
+  margin-top: 7px;
+  font-size: 17px;
+}
+
+label {
+  font-size: 18px;
+}
+
+.opcao {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio {
+  width: 20px;
+  height: 20px;
+  margin: 10px 4px 0px 15px;
+}
+
+select {
+  width: 60%;
+  height: 30px;
+  margin-top: 8px;
+  font-size: 16px;
+  padding: 5px;
+  outline: none;
+  border-radius: 8px;
+}
+
+.cta {
+  background-color: #4F9DDE;
+  color: white;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 30px 0 0 0;
+}
+
+.cta:hover {
+  background-color: #357ABD;
+}
+
+.vantagens, .recursos {
+  margin: 60px auto;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 12px;
+  width: 85%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffe0;
+  }
+
+.vantagens h2, .recursos h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #4F9DDE;
+}
+
+.vantagens ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.vantagens li {
+  font-size: 1.2rem;
+  margin: 12px 4px;
+  text-align: center;
+  padding-left: 0px;
+  position: relative;
+}
+
+.vantagens li::before {
+  content: "✔️";
+  position: relative;
+  color: #4F9DDE;
+  font-size: 1.2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.feature {
+  background-color: #4F9DDE;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+}
+
+#footer-text {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 5px 0px;
+  font-size: 0.9rem;
+  height: fit-content;
+}
